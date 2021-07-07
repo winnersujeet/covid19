@@ -9,6 +9,7 @@ import {
 import { indigo } from "@material-ui/core/colors";
 import BubbleChartOutlinedIcon from "@material-ui/icons/BubbleChartOutlined";
 import RssFeedIcon from "@material-ui/icons/RssFeed";
+import { Link } from "react-router-dom";
 
 export default function HeaderComponent() {
   return (
@@ -18,34 +19,25 @@ export default function HeaderComponent() {
           <BubbleChartOutlinedIcon />
         </IconButton>
         <Typography variant='h6'>
-          <a
-            href='https://himanshulal9.github.io/React-covid19TrackerApp/'
-            style={{
-              textDecoration: "none",
-              color: "white",
-            }}>
-            {" "}
-            Covid19 Tracker{" "}
-          </a>
+          <Link to='/' style={{ textDecoration: "none", color: "white" }}>
+            Covid19 Tracker
+          </Link>
         </Typography>
-        <a
-          href='https://himanshulal9.github.io/ReactUserForm'
+
+        <Button
+          component={Link}
+          to='/feedback_and_grievance'
+          variant='outlined'
+          color='default'
+          startIcon={<RssFeedIcon />}
           style={{
-            textDecoration: "none",
             color: "white",
+            borderColor: "white",
+            textDecoration: "none",
             marginLeft: "auto",
           }}>
-          <Button
-            variant='outlined'
-            color='default'
-            startIcon={<RssFeedIcon />}
-            style={{
-              color: "white",
-              borderColor: "white",
-            }}>
-            Feedback And Grievance
-          </Button>
-        </a>
+          Feedback And Grievance
+        </Button>
       </Toolbar>
     </AppBar>
   );
