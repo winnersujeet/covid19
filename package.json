@@ -1,6 +1,6 @@
 {
   "homepage": "https://winnersujeet/covid19",
-  "name": "covid19_app_tracker",
+  "name": "covid19",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -11,12 +11,15 @@
     "@testing-library/user-event": "^12.8.3",
     "axios": "^0.21.1",
     "chart.js": "^2.9.4",
+    "firebase": "^8.7.0",
+    "gh-pages": "^3.2.2",
     "react": "^17.0.2",
     "react-countup": "^4.3.3",
     "react-dom": "^17.0.2",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
-    "web-vitals": "^1.1.1"
+    "react-toastify": "^7.0.4",
+    "web-vitals": "^1.1.2"
   },
   "scripts": {
     "start": "react-scripts start",
